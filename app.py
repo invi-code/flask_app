@@ -7,9 +7,6 @@ api = Api(app, title="Flask-RESTx Example", version="1.0", description="A simple
 
 # Define a namespace
 ns = api.namespace("example", description="Example operations")
-
-
-
 @ns.route("/hello")
 class HelloWorld(Resource):
     def get(self):
